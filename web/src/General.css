@@ -1,0 +1,36 @@
+:root
+{
+	--primary: #B0976D;
+	--redWine: #722F37;
+	--whiteWine: #EEEDC4;
+}
+
+.primary
+{
+	color: var(--primary) !important;
+}
+
+.red-wine
+{
+	color: var(--redWine) !important;
+}
+
+.white-wine
+{
+	color: var(--whiteWine) !important;
+}
+
+.background-primary
+{
+	background: var(--primary) !important;
+}
+
+.background-red-wine
+{
+	background: var(--redWine) !important;
+}
+
+.background-white-wine
+{
+	background: var(--whiteWine) !important;
+}

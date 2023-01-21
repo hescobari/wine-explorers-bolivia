@@ -1,0 +1,89 @@
+/* General */
+.public .title
+{
+	font-size: 24;
+	color: #232323;
+}
+
+.public .subtitle
+{
+	font-size: 24;
+	color: #232323;
+}
+
+.public .section:nth-child(even)
+{
+	background: #ffffff;
+}
+
+.public .section:nth-child(odd)
+{
+	background: #f1f1f1;
+}
+
+/* Specific */
+
+.public > .header
+{
+	padding: 15px 50px;
+}
+
+.public > .header > .logo .crack-ux-text
+{
+	line-height: 1.25em;
+	letter-spacing: 3px;
+}
+
+.public > .header > .menu .crack-ux-button .crack-ux-text
+{
+	color: #aaaaaa;
+	transition: color 0.35s;
+	font-size: 16px;
+}
+
+.public > .header > .menu .crack-ux-button:hover .crack-ux-text
+{
+	color: var(--primary);
+}
+
+/* Wellcome */
+.public .welcome .crack-ux-text
+{
+	font-size: 16px;
+	color: #999999;
+}
+
+blockquote
+{
+	font-family: Tahoma, sans-serif;
+	font-size: 32px;
+	margin: 0 auto;
+}
+
+blockquote p::before,
+blockquote p::after
+{
+   content: "“";
+   font-family: Georgia;
+   font-size: 8rem;
+   margin: 2rem 0 0 -3.5rem;
+   position: absolute;
+   opacity: 0.5;
+}
+
+blockquote p::after
+{
+   content: "”";
+   margin: 2rem -4rem 0 0;
+}
+
+.public .welcome .crack-ux-header img
+{
+	filter: opacity(0.25) drop-shadow(0 0 0 #999999);
+}
+
+.public .welcome .crack-ux-footer img
+{
+	transform: rotate(180deg);
+	filter: opacity(0.25) drop-shadow(0 0 0 #999999);
+}

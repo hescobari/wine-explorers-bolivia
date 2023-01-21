@@ -1,0 +1,45 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# Files
+server/config.json
+web/src/config.json
+server/package-lock.json
+web/package-lock.json
+
+# Storage
+/storage
+
+# dependencies
+/server/node_modules
+/web/node_modules
+/server/.pnp
+/web/.pnp
+server/.pnp.js
+web/.pnp.js
+
+# testing
+/server/coverage
+/web/coverage
+
+# production
+/server/build
+/wev/build
+
+# misc
+server/.DS_Store
+web/.DS_Store
+server/.env.local
+web/.env.local
+server/.env.development.local
+web/.env.development.local
+server/.env.test.local
+web/.env.test.local
+server/.env.production.local
+web/.env.production.local
+
+server/npm-debug.log*
+web/npm-debug.log*
+server/yarn-debug.log*
+web/yarn-debug.log*
+server/yarn-error.log*
+web/yarn-error.log*
