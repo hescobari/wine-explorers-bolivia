@@ -11,6 +11,11 @@
 	color: #232323;
 }
 
+.public .section
+{
+	min-height: 100vh;
+}
+
 .public .section:nth-child(even)
 {
 	background: #ffffff;
@@ -22,10 +27,19 @@
 }
 
 /* Specific */
-
 .public > .header
 {
-	padding: 15px 50px;
+	background-color: #121212;
+	padding: 15px;
+}
+
+@media screen and (min-width: 768px)
+{
+	.public > .header
+	{
+		background-color: transparent;
+		padding: 15px 35px;
+	}
 }
 
 .public > .header > .logo .crack-ux-text
@@ -34,56 +48,100 @@
 	letter-spacing: 3px;
 }
 
+.public > .header .menu-icon
+{
+	position: absolute;
+	background-color: #121212;
+	color: #cccccc;
+	top: 25px;
+	right: 15px;
+}
+
+@media screen and (min-width: 768px)
+{
+	.public > .header .menu-icon
+	{
+		display: none;
+	}	
+}
+
 .public > .header > .menu .crack-ux-button .crack-ux-text
 {
 	color: #aaaaaa;
-	transition: color 0.35s;
+	transition: color 0.30s;
 	font-size: 16px;
+}
+
+.public > .header > .menu
+{
+	display: block;
+	background-color: #121212;
+	transition: height 0.30s;
+	overflow: hidden;
+}
+
+@media screen and (min-width: 768px)
+{
+	.public > .header > .menu
+	{
+		background-color: transparent;
+		display: inline-block;
+		margin-top: 0px;
+	}
+}
+
+.public > .header > .menu.show
+{
+	height: calc(100vh - 95px);
+	margin-top: 50px;
+}
+
+@media screen and (min-width: 768px)
+{
+	.public > .header > .menu.show
+	{
+		height: auto;
+		margin-top: 0px;
+	}
+}
+
+.public > .header > .menu.hide
+{
+	height: 0px;
+	margin-top: 0px;
+}
+
+@media screen and (min-width: 768px)
+{
+	.public > .header > .menu.hide
+	{
+		height: auto;
+	}
+}
+
+.public > .header > .menu .crack-ux-button
+{
+	display: block;
+	width: 100%;
+	margin-left: 0px;
+}
+
+@media screen and (min-width: 768px)
+{
+	.public > .header > .menu .crack-ux-button
+	{
+		display: inline-block;
+		width: auto;
+	}
+}
+
+.public > .header > .menu .crack-ux-button .crack-ux-text
+{
+	padding-bottom: 5px;
 }
 
 .public > .header > .menu .crack-ux-button:hover .crack-ux-text
 {
 	color: var(--primary);
-}
-
-/* Wellcome */
-.public .welcome .crack-ux-text
-{
-	font-size: 16px;
-	color: #999999;
-}
-
-blockquote
-{
-	font-family: Tahoma, sans-serif;
-	font-size: 32px;
-	margin: 0 auto;
-}
-
-blockquote p::before,
-blockquote p::after
-{
-   content: "“";
-   font-family: Georgia;
-   font-size: 8rem;
-   margin: 2rem 0 0 -3.5rem;
-   position: absolute;
-   opacity: 0.5;
-}
-
-blockquote p::after
-{
-   content: "”";
-   margin: 2rem -4rem 0 0;
-}
-
-.public .welcome .crack-ux-header img
-{
-	filter: opacity(0.25) drop-shadow(0 0 0 #999999);
-}
-
-.public .welcome .crack-ux-footer img
-{
-	transform: rotate(180deg);
-	filter: opacity(0.25) drop-shadow(0 0 0 #999999);
+	border-bottom: solid 1px var(--primary);
 }
