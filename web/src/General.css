@@ -1,6 +1,8 @@
 :root
 {
-	--primary: #B0976D;
+	--primary: #b7193f;
+	--secondary: #7b1430;
+	--gold: #B0976D;
 	--redWine: #722F37;
 	--whiteWine: #EEEDC4;
 }
@@ -8,6 +10,16 @@
 .primary
 {
 	color: var(--primary) !important;
+}
+
+.secondary
+{
+	color: var(--secondary) !important;
+}
+
+.gold
+{
+	color: var(--gold) !important;
 }
 
 .red-wine
@@ -23,6 +35,16 @@
 .background-primary
 {
 	background: var(--primary) !important;
+}
+
+.background-secondary
+{
+	background: var(--secondary) !important;
+}
+
+.background-gold
+{
+	background: var(--gold) !important;
 }
 
 .background-red-wine

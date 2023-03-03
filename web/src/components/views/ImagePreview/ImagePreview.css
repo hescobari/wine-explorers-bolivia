@@ -1,0 +1,10 @@
+.image-preview
+{
+	width: calc(100vw - 50px);
+	height: calc(100vh - 50px);
+}
+
+.image-preview .crack-ux-body
+{
+	height: calc(100% - 48px);
+}
