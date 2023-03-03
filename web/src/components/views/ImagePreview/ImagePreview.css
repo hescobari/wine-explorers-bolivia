@@ -1,7 +1,7 @@
 .image-preview
 {
-	width: calc(100vw - 50px);
-	height: calc(100vh - 50px);
+	width: calc(100vw - 50px) !important;
+	height: calc(100vh - 50px) !important;
 }
 
 .image-preview .crack-ux-body
